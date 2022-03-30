@@ -195,6 +195,7 @@
                         <outlet property="cityLabel" destination="Hx8-oc-2M6" id="Nhu-TZ-JSJ"/>
                         <outlet property="currentIcon" destination="lMD-Pj-sau" id="9Ox-pA-UmX"/>
                         <outlet property="currentSummaryLabel" destination="DXo-pY-NCO" id="btf-4J-8I9"/>
+                        <outlet property="currentTemp" destination="6BG-YZ-D53" id="eks-mz-ijH"/>
                         <outlet property="dateLabel" destination="el6-6d-5KR" id="9rR-Ke-jie"/>
                         <outlet property="forecastSummary" destination="mY0-UU-02f" id="05Z-Tn-klo"/>
                         <outlet property="stateLabel" destination="ytR-Wj-JHd" id="NQK-2P-VwB"/>

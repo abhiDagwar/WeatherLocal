@@ -36,9 +36,9 @@ struct WeatherData: Codable {
     
     var date: Date {
       //strip off the time
-      let dateString = String(dt)
+        let dateString = String("\(dt)".prefix(10))
       //use current date if unable to parse
-        return Self.dateFormatter.date(from: String(dateString.prefix(10))) ?? Date()
+        return Self.dateFormatter.date(from: dateString) ?? Date()
     }
 }
 

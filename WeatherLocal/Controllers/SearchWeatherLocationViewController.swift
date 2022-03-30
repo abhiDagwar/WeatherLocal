@@ -18,8 +18,6 @@ class SearchWeatherLocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(numberOfVowel(str: "Exception"))
-        
         setupSearchBar()
         
         getDefaultLocation()
@@ -52,11 +50,6 @@ class SearchWeatherLocationViewController: UIViewController {
         viewModel.reloadTableView = { [weak self] in
             self?.locationListTableView.reloadData()
         }
-    }
-    
-    func numberOfVowel(str: String) -> Int {
-        let vowel: [Character] = ["a", "e", "i", "o", "u"]
-        return str.lowercased().reduce(0) { $0 + (vowel.contains($1) ? 1 : 0) }
     }
 }
 

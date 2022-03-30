@@ -15,6 +15,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var currentIcon: UIImageView!
     @IBOutlet weak var currentSummaryLabel: UILabel!
     @IBOutlet weak var forecastSummary: UILabel!
+    @IBOutlet weak var currentTemp: UILabel!
     
     var latitute: String?
     var longitute: String?
@@ -60,6 +61,9 @@ class WeatherViewController: UIViewController {
         }
         viewModel.forcastSummary.bind { [weak self] forecastSummary in
             self?.forecastSummary.text = forecastSummary
+        }
+        viewModel.temp.bind { [weak self] temp in
+            self?.currentTemp.text = temp
         }
     }
 

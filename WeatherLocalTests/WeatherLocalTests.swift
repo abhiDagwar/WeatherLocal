@@ -17,12 +17,6 @@ class WeatherLocalTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testVowel_ShouldReturnNumberOfString(){
-        let vc = SearchWeatherLocationViewController()
-        let numberOfVowel = vc.numberOfVowel(str: "Representation")
-        XCTAssertEqual(numberOfVowel, 6, "Shuld be 6 vowel in a given string.")
-    }
     
     func testExample() throws {
         // This is an example of a functional test case.

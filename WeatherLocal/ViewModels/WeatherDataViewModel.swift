@@ -17,6 +17,7 @@ class WeatherDataViewModel: NSObject {
     let icon = Box("") //No image
     let summary = Box(" ")
     let forcastSummary = Box(" ")
+    let temp = Box("-")
     
     private let dateFormatter: DateFormatter = {
       let dateFormatter = DateFormatter()
@@ -41,6 +42,7 @@ class WeatherDataViewModel: NSObject {
             self.state.value = weatherData.sys.country
             self.icon.value = weatherData.weather[0].icon
             self.summary.value = weatherData.weather[0].main
+            self.temp.value = "\(weatherData.main.temp)"
             self.forcastSummary.value = "\nSummary: \(weatherData.weather[0].weatherDescription)"
         }
     }

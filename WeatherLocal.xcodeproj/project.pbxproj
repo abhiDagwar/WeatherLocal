@@ -19,6 +19,9 @@
 		5095C0F027F30D1500F9520D /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0EF27F30D1500F9520D /* WeatherData.swift */; };
 		5095C0F227F315CD00F9520D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0F127F315CD00F9520D /* WeatherViewController.swift */; };
 		5095C0F427F31BC100F9520D /* WeatherDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0F327F31BC100F9520D /* WeatherDataViewModel.swift */; };
+		5095C0F627F4487900F9520D /* WeatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5095C0F527F4487900F9520D /* WeatherData.json */; };
+		5095C0F827F448F200F9520D /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0F727F448F200F9520D /* WeatherDataTest.swift */; };
+		5095C0FA27F4490E00F9520D /* GeoCodingDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0F927F4490E00F9520D /* GeoCodingDataTest.swift */; };
 		50A3552D27C8D4CB0026ADDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3552C27C8D4CB0026ADDE /* AppDelegate.swift */; };
 		50A3552F27C8D4CB0026ADDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3552E27C8D4CB0026ADDE /* SceneDelegate.swift */; };
 		50A3553127C8D4CB0026ADDE /* SearchWeatherLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3553027C8D4CB0026ADDE /* SearchWeatherLocationViewController.swift */; };
@@ -61,6 +64,9 @@
 		5095C0EF27F30D1500F9520D /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		5095C0F127F315CD00F9520D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		5095C0F327F31BC100F9520D /* WeatherDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataViewModel.swift; sourceTree = "<group>"; };
+		5095C0F527F4487900F9520D /* WeatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherData.json; sourceTree = "<group>"; };
+		5095C0F727F448F200F9520D /* WeatherDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
+		5095C0F927F4490E00F9520D /* GeoCodingDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodingDataTest.swift; sourceTree = "<group>"; };
 		50A3552927C8D4CB0026ADDE /* WeatherLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A3552C27C8D4CB0026ADDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50A3552E27C8D4CB0026ADDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 			children = (
 				5089492227E8A4D600BF806E /* Geocoding.geojson */,
 				5089492427E8A51600BF806E /* GeoCoding.json */,
+				5095C0F527F4487900F9520D /* WeatherData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -233,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				50A3554627C8D4CC0026ADDE /* WeatherLocalTests.swift */,
+				5095C0F727F448F200F9520D /* WeatherDataTest.swift */,
+				5095C0F927F4490E00F9520D /* GeoCodingDataTest.swift */,
 			);
 			path = WeatherLocalTests;
 			sourceTree = "<group>";
@@ -350,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5095C0F627F4487900F9520D /* WeatherData.json in Resources */,
 				50A3553C27C8D4CC0026ADDE /* LaunchScreen.storyboard in Resources */,
 				50A3553927C8D4CC0026ADDE /* Assets.xcassets in Resources */,
 				50A3553427C8D4CB0026ADDE /* Main.storyboard in Resources */,
@@ -400,7 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5095C0F827F448F200F9520D /* WeatherDataTest.swift in Sources */,
 				50A3554727C8D4CC0026ADDE /* WeatherLocalTests.swift in Sources */,
+				5095C0FA27F4490E00F9520D /* GeoCodingDataTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
