@@ -14,7 +14,7 @@
 		5054A65027F2D145009A7402 /* GeoCodingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5054A64F27F2D145009A7402 /* GeoCodingCellViewModel.swift */; };
 		5089492127E89E9500BF806E /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089492027E89E9500BF806E /* GeoLocation.swift */; };
 		5089492327E8A4D600BF806E /* Geocoding.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5089492227E8A4D600BF806E /* Geocoding.geojson */; };
-		5089492527E8A51600BF806E /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = 5089492427E8A51600BF806E /* File.json */; };
+		5089492527E8A51600BF806E /* GeoCoding.json in Resources */ = {isa = PBXBuildFile; fileRef = 5089492427E8A51600BF806E /* GeoCoding.json */; };
 		5089492727E8CB5600BF806E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089492627E8CB5600BF806E /* Endpoint.swift */; };
 		5095C0F027F30D1500F9520D /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0EF27F30D1500F9520D /* WeatherData.swift */; };
 		5095C0F227F315CD00F9520D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5095C0F127F315CD00F9520D /* WeatherViewController.swift */; };
@@ -56,7 +56,7 @@
 		5054A64F27F2D145009A7402 /* GeoCodingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodingCellViewModel.swift; sourceTree = "<group>"; };
 		5089492027E89E9500BF806E /* GeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocation.swift; sourceTree = "<group>"; };
 		5089492227E8A4D600BF806E /* Geocoding.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Geocoding.geojson; sourceTree = "<group>"; };
-		5089492427E8A51600BF806E /* File.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
+		5089492427E8A51600BF806E /* GeoCoding.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GeoCoding.json; sourceTree = "<group>"; };
 		5089492627E8CB5600BF806E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		5095C0EF27F30D1500F9520D /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		5095C0F127F315CD00F9520D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5089492227E8A4D600BF806E /* Geocoding.geojson */,
-				5089492427E8A51600BF806E /* File.json */,
+				5089492427E8A51600BF806E /* GeoCoding.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				50A3553927C8D4CC0026ADDE /* Assets.xcassets in Resources */,
 				50A3553427C8D4CB0026ADDE /* Main.storyboard in Resources */,
 				5089492327E8A4D600BF806E /* Geocoding.geojson in Resources */,
-				5089492527E8A51600BF806E /* File.json in Resources */,
+				5089492527E8A51600BF806E /* GeoCoding.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
