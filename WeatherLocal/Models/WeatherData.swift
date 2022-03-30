@@ -7,19 +7,6 @@
 
 import Foundation
 
-// To parse the JSON, add this file to your project and do:
-//
-//   let weatherData = try? newJSONDecoder().decode(WeatherData.self, from: jsonData)
-
-import Foundation
-
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let weatherData = try? newJSONDecoder().decode(WeatherData.self, from: jsonData)
-
-import Foundation
-
 // MARK: - WeatherData
 struct WeatherData: Codable {
     private static let dateFormatter: DateFormatter = {
@@ -36,7 +23,7 @@ struct WeatherData: Codable {
     
     var date: Date {
       //strip off the time
-        let dateString = String("\(dt)".prefix(10))
+        let dateString = String(dt)
       //use current date if unable to parse
         return Self.dateFormatter.date(from: dateString) ?? Date()
     }
