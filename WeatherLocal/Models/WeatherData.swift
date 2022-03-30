@@ -22,11 +22,24 @@ import Foundation
 
 // MARK: - WeatherData
 struct WeatherData: Codable {
+    private static let dateFormatter: DateFormatter = {
+      var formatter = DateFormatter()
+      formatter.dateFormat = "yyyy-MM-dd"
+      return formatter
+    }()
+    
     let weather: [Weather]
     let main: Main
     let dt: Int
     let sys: Sys
     let name: String
+    
+    var date: Date {
+      //strip off the time
+      let dateString = String(dt)
+      //use current date if unable to parse
+        return Self.dateFormatter.date(from: String(dateString.prefix(10))) ?? Date()
+    }
 }
 
 // MARK: - Main

@@ -36,7 +36,7 @@ class WeatherDataViewModel: NSObject {
             else {
               return
             }
-            //self.date.value = self.dateFormatter.string(from: weatherData.dt)
+            self.date.value = self.dateFormatter.string(from: weatherData.date)
             self.locationName.value = weatherData.name
             self.state.value = weatherData.sys.country
             self.icon.value = weatherData.weather[0].icon

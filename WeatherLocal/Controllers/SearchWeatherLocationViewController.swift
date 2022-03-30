@@ -87,7 +87,7 @@ extension SearchWeatherLocationViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "WeatherViewController") as? WeatherViewController
-        var cellVM = viewModel.getCellViewModel(at: indexPath)
+        let cellVM = viewModel.getCellViewModel(at: indexPath)
         cellVM.lat.bind { lat in
             vc?.latitute = lat
         }

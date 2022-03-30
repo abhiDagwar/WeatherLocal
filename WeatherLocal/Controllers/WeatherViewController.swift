@@ -44,6 +44,7 @@ class WeatherViewController: UIViewController {
         
         viewModel.locationName.bind { [weak self] locationName in
             self?.cityLabel.text = locationName
+            self?.title = locationName
         }
         viewModel.state.bind { [weak self] state in
             self?.stateLabel.text = state
