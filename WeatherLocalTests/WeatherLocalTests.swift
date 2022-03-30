@@ -18,6 +18,24 @@ class WeatherLocalTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testFetchLocationForName() {
+      let expectation = self.expectation(description: "Find location using geocoder")
+      let viewModel = GeoCodingViewModel()
+        viewModel.reloadTableView = {
+            viewModel.geoCodingCellViewModels[0].name.bind {
+            if $0.caseInsensitiveCompare("Wardha") == .orderedSame {
+              expectation.fulfill()
+            }
+        }
+      }
+      
+      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+          viewModel.fetchLocations(with: "Wardha")
+      }
+      
+      waitForExpectations(timeout: 8, handler: nil)
+    }
+    
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
