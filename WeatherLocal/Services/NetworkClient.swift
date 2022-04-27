@@ -10,6 +10,7 @@ import Foundation
 protocol NetworkClientProtocol {
     func getGeoAddress(for location: String, completion: @escaping (GeoLocations?, Error?) -> Void)
     func getWeatherData(for lat: String, lon: String, completion: @escaping (WeatherData?, Error?) -> Void)
+    func getImageIconData(for imageName: String, completion: @escaping () -> Void)
 }
 
 class NetworkClient: NetworkClientProtocol {
@@ -85,5 +86,9 @@ class NetworkClient: NetworkClientProtocol {
                 completion(nil, error)
             }
         }
+    }
+    
+    func getImageIconData(for imageName: String, completion: @escaping () -> Void) {
+        //
     }
 }
